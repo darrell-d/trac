@@ -103,6 +103,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 $border: #C2EAE9;
 $black: #2C3E50;
 $red: #E74C3C;
@@ -112,10 +113,10 @@ $dark-blue: #2980B9;
 $light-sand: #EFECCA;
 $medium-sand: #E6E2AF;
 $dark-sand: #A7A37E;
-
 html {
     width: 100%;
 }
+
 body {
     background-color: $white;
 }
@@ -130,15 +131,14 @@ body {
     button {
         font-size: 3em;
         background-color: $light-blue;
-        margin-right:10px;
-        border:none;
+        margin-right: 10px;
+        border: none;
         color: $white;
         font-family: Helvetica;
         padding: 20px 50px 20px 50px;
     }
-    button:hover
-    {
-        color:white;
+    button:hover {
+        color: white;
     }
 }
 
@@ -159,6 +159,26 @@ body {
     margin-right: auto;
     min-width: 500px;
     max-width: 780px;
+}
+
+/* when hiding the picture */
+.ng-hide-add         { animation:0.5s lightSpeedOut ease; }
+
+/* when showing the picture */
+.ng-hide-remove      { animation:0.5s flipInX ease; }
+
+
+/* light speed out */
+@keyframes lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
 }
 
 

@@ -115,6 +115,22 @@ body {
   min-width: 500px;
   max-width: 780px; }
 
+/* when hiding the picture */
+.ng-hide-add {
+  animation: 0.5s lightSpeedOut ease; }
+
+/* when showing the picture */
+.ng-hide-remove {
+  animation: 0.5s flipInX ease; }
+
+/* light speed out */
+@keyframes lightSpeedOut {
+  0% {
+    opacity: 1; }
+  100% {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
